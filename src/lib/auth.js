@@ -5,7 +5,7 @@ let isAuthenticated = false
 
 // Simulating environment variables that would be in .env.local
 const ADMIN_USERNAME = "admin"
-const ADMIN_PASSWORD = "adity123"
+const ADMIN_PASSWORD = "aditya123"
 
 export async function authenticate(username, password) {
   // Simulate API call delay
