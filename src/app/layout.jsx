@@ -24,16 +24,20 @@ export default function RootLayout({ children }) {
         {children}
 
         {/* Floating Chat Buttons */}
-        <div className="fixed bottom-24 right-5 flex flex-col items-end space-y-3 z-50">
-          <button className="p-3 rounded-full bg-amber-500 hover:bg-amber-600 shadow-lg transition">
-            <PhoneIcon />
-          </button>
-          <button className="p-3 rounded-full bg-green-500 hover:bg-green-600 shadow-lg transition">
-            <WhatsAppIcon />
-          </button>
+      <div className="fixed bottom-24 right-5 flex flex-col items-end space-y-3 z-50">
+  {/* Phone Button with tel link */}
+  <a href="tel:+919289677469" className="p-3 rounded-full bg-amber-500 hover:bg-amber-600 shadow-lg transition" aria-label="Call Us">
+    <PhoneIcon />
+  </a>
 
-          <Tawk/>
-        </div>
+  {/* WhatsApp Button with direct chat link */}
+  <a href="https://wa.me/919289677469" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-green-500 hover:bg-green-600 shadow-lg transition" aria-label="Chat on WhatsApp">
+    <WhatsAppIcon />
+  </a>
+
+  <Tawk />
+</div>
+
       </body>
     </html>
   );
