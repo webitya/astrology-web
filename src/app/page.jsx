@@ -15,7 +15,7 @@ export default function Home() {
       <HomePageHoroscope />
       <HomePageTestimonials />
       <HomePageCTA />
-      <SupportChat />
+      {/* <SupportChat /> */}
     </main>
   )
 }
