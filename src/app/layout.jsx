@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
     <WhatsAppIcon />
   </a>
 
-  <Tawk />
+  {/* <Tawk /> */}
 </div>
 
       </body>
